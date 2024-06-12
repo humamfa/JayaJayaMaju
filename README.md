@@ -27,11 +27,15 @@ Password: root123
 Business Dashboard terdiri dari 2 jenis grafik.
 
 Grafik pertama menempatkan attrition rate di sumbu y dan kategori karyawan di sumbu x. Contoh:
+
 ![image](https://github.com/humamfa/JayaJayaMaju/assets/152384891/ffdc3f85-f48c-4c8d-823c-74b81faae32b)
+
 Grafik di atas menunjukkan karyawan yang tidak melakukan overtime memiliki attrition rate 11%.
 
 Grafik kedua menempatkan attrition di sumbu x dan kategori karyawan di sumbu y. Contoh:
+
 ![image](https://github.com/humamfa/JayaJayaMaju/assets/152384891/fab92a03-1634-4618-b017-9309e88f8a38)
+
 Grafik di atas menunjukkan bahwa karyawan yang keluar dari perusahaan (nilai attrition 1) memiliki rata-rata income bulanan sebesar $4.872,4
 
 ## Conclusion
@@ -45,3 +49,19 @@ Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna m
 
 - Jaya Jaya Maju perlu memperhatikan komitmen overtime karyawan.
 - Jaya Jaya Maju perlu memperhatikan umur karyawan, baik karyawan aktif maupun calon karyawan yang akan direkrut ke depannya, terutama karyawan yang berada pada jarak umur 18-22 tahun.
+
+## Model Machine Learning
+
+Prediksi attrition karyawan dapat dilakukan dengan menggunakan script Python (Jaya_Jaya_Maju.py). Untuk memasukkan data karyawan, gunakan baris paling bawah:
+```
+print(clf.predict([[...]]))
+```
+Data karyawan dapat diisi pada bagian kosong dengan format berikut:
+```
+['Age', 'DailyRate', 'DistanceFromHome', 'Education', 'EnvironmentSatisfaction', 'HourlyRate', 'JobInvolvement', 'JobLevel', 'JobSatisfaction', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked', 'PercentSalaryHike', 'PerformanceRating', 'RelationshipSatisfaction', 'StockOptionLevel', 'TotalWorkingYears', 'TrainingTimesLastYear', 'WorkLifeBalance', 'YearsAtCompany', 'YearsInCurrentRole', 'YearsSinceLastPromotion', 'YearsWithCurrManager', 'BusinessTravel_num', 'Department_num', 'EducationField_num', 'Gender_num', 'JobRole_num', 'MaritalStatus_num', 'OverTime_num']
+```
+Contoh:
+
+![image](https://github.com/humamfa/JayaJayaMaju/assets/152384891/c5e7ec91-9609-459e-9b83-dfa9512d0307)
+
+Nilai output yang dihasilkan adalah 0 (karyawan diprediksi tidak keluar dari perusahaan) dan 1 (karyawan diprediksi keluar dari perusahaan.
