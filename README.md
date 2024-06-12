@@ -64,4 +64,4 @@ Contoh:
 
 ![image](https://github.com/humamfa/JayaJayaMaju/assets/152384891/c5e7ec91-9609-459e-9b83-dfa9512d0307)
 
-Nilai output yang dihasilkan adalah 0 (karyawan diprediksi tidak keluar dari perusahaan) dan 1 (karyawan diprediksi keluar dari perusahaan.
+Nilai output yang dihasilkan adalah 0 (karyawan diprediksi tidak keluar dari perusahaan) atau 1 (karyawan diprediksi keluar dari perusahaan).
