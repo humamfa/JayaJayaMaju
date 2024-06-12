@@ -14,10 +14,11 @@ Tuliskan cakupan proyek yang akan dikerjakan.
 
 ### Persiapan
 
-Sumber data: ....
+Sumber data: Jaya Jaya Maju (https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
 
 Setup environment:
-
+Username: root@mail.com
+Password: root123
 ```
 
 ```
@@ -28,7 +29,7 @@ Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga l
 
 ## Conclusion
 
-Jelaskan konklusi dari proyek yang dikerjakan.
+Jaya Jaya Maju perlu memperhatikan umur karyawan, baik karyawan aktif maupun calon karyawan yang akan direkrut ke depannya, terutama karyawan yang berada pada jarak umur 18-22 tahun yang memiliki attrition rate minimal 0,5. Jaya Jaya Maju juga perlu memperhatikan komitmen overtime karyawan, di mana karyawan yang melakukan overtime memiliki attrition rate hampir 3x (0,32) dibandingkan dengan karyawan yang tidak melakukan overtime (0,11).
 
 ### Rekomendasi Action Items (Optional)
 
