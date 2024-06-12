@@ -10,22 +10,25 @@ Walaupun telah menjadi menjadi perusahaan yang cukup besar, Jaya Jaya Maju masih
 
 ### Cakupan Proyek
 
-Tuliskan cakupan proyek yang akan dikerjakan.
+Membuat business dashboard dan model machine learning berdasarkan dataset karyawan Jaya Jaya Maju.
 
 ### Persiapan
 
 Sumber data: Jaya Jaya Maju (https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
 
 Setup environment:
+```
 Username: root@mail.com
 Password: root123
 ```
 
-```
-
 ## Business Dashboard
 
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
+Business Dashboard terdiri dari 2 jenis grafik.
+Grafik pertama menempatkan attrition rate di sumbu y dan kategori karyawan di sumbu x. Contoh:
+![image](https://github.com/humamfa/JayaJayaMaju/assets/152384891/ffdc3f85-f48c-4c8d-823c-74b81faae32b)
+
+
 
 ## Conclusion
 
