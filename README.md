@@ -47,11 +47,6 @@ pipenv shell
 pip install -r requirements.txt
 ```
 
-Run model:
-```
-python jaya_jaya_maju.py
-```
-
 ## Business Dashboard
 
 Business Dashboard terdiri dari 2 jenis grafik.
