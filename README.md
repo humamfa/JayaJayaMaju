@@ -6,17 +6,26 @@ Jaya Jaya Maju merupakan salah satu perusahaan multinasional yang telah berdiri 
 
 ### Permasalahan Bisnis
 
-Walaupun telah menjadi menjadi perusahaan yang cukup besar, Jaya Jaya Maju masih cukup kesulitan dalam mengelola karyawan. Hal ini berimbas tingginya attrition rate (rasio jumlah karyawan yang keluar dengan total karyawan keseluruhan) hingga lebih dari 10%.
+Walaupun telah menjadi menjadi perusahaan yang cukup besar, Jaya Jaya Maju masih cukup kesulitan dalam mengelola karyawan. Hal ini berimbas tingginya _attrition rate_ (rasio jumlah karyawan yang keluar dengan total karyawan keseluruhan) hingga lebih dari 10%. Mengidentifikasi penyebab karyawan melakukan atrisi perlu dilakukan secepat mungkin. _Attrition rate_ yang tinggi dapat menciptakan lingkungan kerja yang tidak stabil dan mengganggu _working culture_ di perusahaan.
 
 ### Cakupan Proyek
 
-Membuat business dashboard dan model machine learning berdasarkan dataset karyawan Jaya Jaya Maju.
+- Mengidentifikasi penyebab tingginya attrition rate di perusahaan Jaya Jaya Maju.
+- Membuat business dashboard.
+- Membuat model machine learning berdasarkan dataset karyawan Jaya Jaya Maju untuk memprediksi kemungkinan karyawan melakukan attrition.
 
 ### Persiapan
 
 Sumber data: Jaya Jaya Maju (https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
 
 Setup environment:
+
+```
+docker pull metabase/metabase:v0.46.4
+docker run -p 3000:3000 --name metabase metabase/metabase
+```
+
+Login Metabase:
 ```
 Username: root@mail.com
 Password: root123
@@ -42,19 +51,20 @@ Grafik di atas menunjukkan bahwa karyawan yang keluar dari perusahaan (nilai att
 
 - Karyawan yang melakukan overtime memiliki attrition rate hampir 3x (0,32) dibandingkan dengan karyawan yang tidak melakukan overtime (0,11).
 - Karyawan yang berada pada jarak umur 18-22 tahun memiliki attrition rate minimal 0,5.
+- Karekteristik umum karyawan yang melakukan attrition adalah melakukan overtime, berusia 18-22 tahun, monthly income di bawah $2056, 
 
 ### Rekomendasi Action Items (Optional)
 
 Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
 
-- Jaya Jaya Maju perlu memperhatikan komitmen overtime karyawan.
-- Jaya Jaya Maju perlu memperhatikan umur karyawan, baik karyawan aktif maupun calon karyawan yang akan direkrut ke depannya, terutama karyawan yang berada pada jarak umur 18-22 tahun.
+- Jaya Jaya Maju perlu memperhatikan komitmen overtime karyawan. Perusahaan perlu menghindari terjadinya overtime, mengingat standard hour yang ditetapkan perusahaan adalah 80 jam. Apabila diperlukan, total jam overtime sebaiknya dibatasi 3 jam dalam satu hari dan 14 belas jam dalam satu minggu (merujuk UU 13/2003 pasal 78).
+- Jaya Jaya Maju perlu memperhatikan umur karyawan, baik karyawan aktif maupun calon karyawan yang akan direkrut ke depannya, terutama karyawan yang berada pada jarak umur 18-22 tahun. Perusahaan perlu mengutamakan untuk merekrut karyawan di usia 23 tahun ke atas untuk mengurangi kemungkinan karyawan melakukan attrition.
 
 ## Model Machine Learning
 
-Prediksi attrition karyawan dapat dilakukan dengan menggunakan script Python (Jaya_Jaya_Maju.py). Untuk memasukkan data karyawan, gunakan baris paling bawah:
+Prediksi attrition karyawan dapat dilakukan dengan menggunakan script Python (Jaya_Jaya_Maju.py). Untuk memasukkan data karyawan:
 ```
-print(clf.predict([[...]]))
+print(model.predict([[...]]))
 ```
 Data karyawan dapat diisi pada bagian kosong dengan format berikut:
 ```
@@ -63,5 +73,10 @@ Data karyawan dapat diisi pada bagian kosong dengan format berikut:
 Contoh:
 
 ![image](https://github.com/humamfa/JayaJayaMaju/assets/152384891/c5e7ec91-9609-459e-9b83-dfa9512d0307)
+
+Run script Python:
+```
+python jaya_jaya_maju.py
+```
 
 Nilai output yang dihasilkan adalah 0 (karyawan diprediksi tidak keluar dari perusahaan) atau 1 (karyawan diprediksi keluar dari perusahaan).
