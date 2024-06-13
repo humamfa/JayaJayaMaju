@@ -16,7 +16,7 @@ Walaupun telah menjadi menjadi perusahaan yang cukup besar, Jaya Jaya Maju masih
 
 ### Persiapan
 
-Sumber data: Jaya Jaya Maju (https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
+Sumber data: Jaya Jaya Maju (https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/employee_data.csv)
 
 Setup environment Dashboard:
 
