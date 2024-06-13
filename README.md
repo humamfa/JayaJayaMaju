@@ -72,7 +72,10 @@ Data karyawan dapat diisi pada bagian kosong dengan format berikut:
 ```
 Contoh:
 
-![image](https://github.com/humamfa/JayaJayaMaju/assets/152384891/c5e7ec91-9609-459e-9b83-dfa9512d0307)
+```
+print(model.predict([[19,111,1000,2,4,555,1,4,4,1000,1111,6,55,4,3,2,11,6,3,4,3,1,2,1,1,3,0,1,1,0]]))
+### Output: [0]
+```
 
 Run script Python:
 ```
