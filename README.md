@@ -18,7 +18,7 @@ Walaupun telah menjadi menjadi perusahaan yang cukup besar, Jaya Jaya Maju masih
 
 Sumber data: Jaya Jaya Maju (https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv)
 
-Setup environment:
+Setup environment Dashboard:
 
 ```
 docker pull metabase/metabase:v0.46.4
@@ -29,6 +29,27 @@ Login Metabase:
 ```
 Username: root@mail.com
 Password: root123
+```
+
+Setup environment Python - Anaconda:
+```
+conda create --name decision-tree python=3.9
+conda activate decision-tree
+pip install -r requirements.txt
+```
+
+Setup environment Python - Terminal:
+```
+mkdir decision_tree
+cd decision_tree
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+```
+
+Run model:
+```
+python jaya_jaya_maju.py
 ```
 
 ## Business Dashboard
